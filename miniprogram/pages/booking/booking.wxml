@@ -1,0 +1,65 @@
+<import src="booking.skeleton.wxml" />
+<template is="skeleton" wx-if="{{loading}}" />
+<view class="booking" wx:else>
+  <view class="bk-title">
+    <view class="content">
+      <text class="ctype {{ index===activeIndex ?'Highlight':''}}" wx:for="{{bookingType}}" wx:key="index"
+        data-index="{{index}} " bindtap="toggleBookingType">{{item.title}}</text>
+    </view>
+  </view>
+  <view class="input">
+    <input class="bk-input" type="digit" data-key="money" value="{{money}}" bindblur="setValue" placeholder="输入金额" />
+    <swiper class="banner" indicator-dots="true" indicator-active-color="#6e62e2">
+      <block>
+        <swiper-item wx:for="{{icon}}" wx:key="i" wx:for-item="e" wx:for-index="i">
+          <view class="bk-type">
+            <view class="types " wx:for="{{e}}" bindtap="toggleType" wx:key="index" data-index="{{index}}"
+              data-indexs="{{i}}">
+              <image class="img hidden "
+                src="{{item.urls}}" mode="widthFix"></image>
+
+              <image class="img {{i !=bannerNum?'':index == activeIndexs ?'select':''}}"
+                src="{{i !=bannerNum?item.url:index == activeIndexs ?item.urls:item.url}}" mode="widthFix"></image>
+             
+              <view class="text {{i !=bannerNum?'':index == activeIndexs ?'selects':''}}">{{item.name}}</view>
+            </view>
+
+          </view>
+        </swiper-item>
+
+      </block>
+    </swiper>
+  </view>
+  <view class="z-h">
+    账户选择
+  </view>
+  <view class="payment-type">
+    <view class="p {{index == aindex?'p'+aindex:''}}" wx:for="{{account}}" wx:key="index" bindtap="accounts"
+      data-index="{{index}}">{{item.name}}</view>
+
+  </view>
+  <view class="date">
+    <view class="lf">日期：</view>
+    <view class="rg">
+      <picker mode="date" value="{{date}}" start="2015-01-01" end="{{currentDate}}" data-key="date"
+        bindchange="setValue">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="booking-content-item textarea">
+    <view class="b-title">备注：</view>
+    <view class="c-content textarea-c">
+      <textarea class="t" placeholder-class="area" data-key="comment" bindinput="setValue" placeholder="填写备注" value="{{comment}}"
+        maxlength="{{50}}" />
+      </view>
+      </view>
+  <view class="btn">
+    <button class="btns" type="primary" bindtap="save">保存</button>
+    <button class="btnsq" wx:if="{{!isAuth}}" open-type="getUserInfo" bindgetuserinfo="getuserAuthInfo">授权</button>
+  </view>
+  
+
+</view>

@@ -1,0 +1,23 @@
+<import src="my.skeleton.wxml"/>
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="my" wx:sele>
+  <view class="my-bg">
+    <view wx:if="{{isAuth}}">
+      <view class="my-portrait" >
+      <image  src="{{userInfoData.avatarUrl}}"></image>
+    </view>
+    <view class="username">
+     {{userInfoData.nickName}}
+    </view>
+    </view>
+    
+    <button class="btn" wx:else open-type="getUserInfo" bindgetuserinfo="getuserAuthInfo">获取头像</button>
+  </view>
+  
+  <view class="detailed-bill" bindtap="mybill">
+    <view class="my1">我的记账</view>
+    <view class="my2">
+      <image class="img" src="../../images/tz.png"></image>
+    </view>
+  </view>
+</view>

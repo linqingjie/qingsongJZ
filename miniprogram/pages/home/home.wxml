@@ -1,0 +1,38 @@
+<import src="home.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+<view class="home" wx:else>
+  <view class="home-bg">
+    <view class="home-balance">本月结余(元)</view>
+    <view class="home-balances">{{currentMonthBooking.jy}}.<text class="home-decimal">{{currentMonthBooking.jyDecimal}}</text></view>
+    <view class="home-detailed">
+      <view class="home-left">
+        <view class="top">本月收入</view>
+        <view class="bottom">{{currentMonthBooking.sr}}.<text>{{currentMonthBooking.srDecimal}}</text></view>
+      </view>
+      <view class="home-right">
+        <view class="top">本月支出</view>
+        <view class="bottom">{{currentMonthBooking.zc}}.<text>{{currentMonthBooking.zcDecimal}}</text></view>
+      </view>
+    </view>
+  </view>
+  <view class="home-nav">
+    <view class="nav-lf">
+      <view>{{date}}</view>
+      <view class="sr">收入: {{currentDateMoney.sr}}</view>
+      <view class="zc">支出: {{currentDateMoney.zc}}</view>
+    </view>
+    <view class="nav-rg">
+      <picker mode="date" start="{{pickerDate.start}}" end="{{pickerDate.end}}" bindchange="toggleCurrentDate">
+        <view class="picker">
+          <view></view>
+          <view></view>
+          <view></view>
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="home-bill">
+    <bill is-show="{{false}}" wx:for="{{currentDateBooking}}" booking-data="{{item}}" wx:key="index"></bill>
+    <view class="not-booking" hidden="{{currentDateBooking.length > 0}}">{{currentDate}} 没有任何记账记录!</view>
+  </view>
+</view>

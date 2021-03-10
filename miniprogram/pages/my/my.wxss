@@ -1,0 +1,56 @@
+@import "./my.skeleton.wxss";
+.my .my-bg{
+  height: 400rpx;
+  background-color: #6e62e2;
+  padding-top: 1px;
+}
+.my .my-bg .my-portrait{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 auto;
+  margin-top: 60rpx;
+  background-color: white;
+  border-radius: 50%;
+}
+.my .my-bg .my-portrait image{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.my .my-bg .username{
+ transform: translateY(40rpx);
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 60%;
+  margin: 0 auto;
+}
+.my .detailed-bill{
+  margin-top: 20rpx;
+  line-height: 100rpx;
+  background-color: white;
+  padding: 0 20rpx;
+  display: flex;
+}
+.my .detailed-bill .my1{
+  flex: 1;
+}
+.my .detailed-bill .my2{
+  margin-right: auto;
+  width: 100rpx;
+}
+.my .detailed-bill .my2 .img{
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 auto;
+  padding-top: 20rpx;
+  display: block;
+}
+.btn{
+  margin-top: 100rpx;
+}

@@ -1,0 +1,5 @@
+<import src="mybill.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+<view class="data-list">
+  <bill is-show="true" wx:for="{{bookingData}}" data-index="{{index}}" wx:key="index" booking-data="{{item}}" bindremove="removeDates"></bill>
+</view>

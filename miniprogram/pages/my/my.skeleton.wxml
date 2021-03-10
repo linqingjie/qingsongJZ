@@ -1,0 +1,36 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/9 下午6:45:35
+使用方法：
+在 F:\粤嵌资料\代码合集\自写\qingshon\miniprogram\pages\my\my.wxml 引入模板
+
+```
+
+```
+
+在 F:\粤嵌资料\代码合集\自写\qingshon\miniprogram\pages\my\my.wxss 中引入样式
+```
+
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="my">
+      <view class="my-bg">
+        <view class="my-portrait">
+          <image class="sk-image"></image>
+        </view>
+        <view class="username sk-transparent sk-text-14-2857-217 sk-text" style="background-position-x: 50%;">
+          汤圆
+        </view>
+      </view>
+      <view class="detailed-bill">
+        <view class="my1 sk-transparent sk-text-34-0000-37 sk-text">我的记账</view>
+        <view class="my2">
+          <image class="img sk-image"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

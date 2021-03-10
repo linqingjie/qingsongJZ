@@ -1,0 +1,113 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/9 下午3:17:10
+使用方法：
+在 F:\粤嵌资料\代码合集\自写\qingshon\miniprogram\pages\detail\detail.wxml 引入模板
+
+```
+<import src="detail.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 F:\粤嵌资料\代码合集\自写\qingshon\miniprogram\pages\detail\detail.wxss 中引入样式
+```
+@import "./detail.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view>
+      <view>
+        <view is="components/bill/bill">
+          <view class="bill--bill">
+            <view class="bill--lf">
+              <image class="bill--img sk-image"></image>
+            </view>
+            <view class="bill--rg" style="border: none;">
+              <view class="bill--rg-lf">
+                <view class="bill--top">
+                  <text class="bill--c1"></text>
+                  <text class="bill--c2 bill--c4"></text>
+                  <text class="bill--c2"></text>
+                </view>
+                <view class="bill--bottom"></view>
+              </view>
+              <view class="bill--rg-rg">
+                <view class="bill--price sk-transparent sk-text-14-2857-52 sk-text">
+                  -￥
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view is="components/bill/bill">
+          <view class="bill--bill">
+            <view class="bill--lf">
+              <image class="bill--img sk-image"></image>
+            </view>
+            <view class="bill--rg" style="border: none;">
+              <view class="bill--rg-lf">
+                <view class="bill--top">
+                  <text class="bill--c1"></text>
+                  <text class="bill--c2 bill--c4"></text>
+                  <text class="bill--c2"></text>
+                </view>
+                <view class="bill--bottom"></view>
+              </view>
+              <view class="bill--rg-rg">
+                <view class="bill--price sk-transparent sk-text-14-2857-115 sk-text">
+                  -￥
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view is="components/bill/bill">
+          <view class="bill--bill">
+            <view class="bill--lf">
+              <image class="bill--img sk-image"></image>
+            </view>
+            <view class="bill--rg" style="border: none;">
+              <view class="bill--rg-lf">
+                <view class="bill--top">
+                  <text class="bill--c1"></text>
+                  <text class="bill--c2 bill--c4"></text>
+                  <text class="bill--c2"></text>
+                </view>
+                <view class="bill--bottom"></view>
+              </view>
+              <view class="bill--rg-rg">
+                <view class="bill--price sk-transparent sk-text-14-2857-107 sk-text">
+                  -￥
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view is="components/bill/bill">
+          <view class="bill--bill">
+            <view class="bill--lf">
+              <image class="bill--img sk-image"></image>
+            </view>
+            <view class="bill--rg" style="border: none;">
+              <view class="bill--rg-lf">
+                <view class="bill--top">
+                  <text class="bill--c1"></text>
+                  <text class="bill--c2 bill--c4"></text>
+                  <text class="bill--c2"></text>
+                </view>
+                <view class="bill--bottom"></view>
+              </view>
+              <view class="bill--rg-rg">
+                <view class="bill--price sk-transparent sk-text-14-2857-39 sk-text">
+                  -￥
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

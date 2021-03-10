@@ -1,0 +1,176 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/8 上午10:20:19
+使用方法：
+在 F:\粤嵌资料\代码合集\自写\qingshon\miniprogram\pages\chart\chart.wxml 引入模板
+
+```
+<import src="chart.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 F:\粤嵌资料\代码合集\自写\qingshon\miniprogram\pages\chart\chart.wxss 中引入样式
+```
+@import "./chart.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="sk-container">
+      <view class="sk-container">
+        <view class="chart">
+          <view class="chart-nav">
+            <view class="select-date">
+              <view class="sk-transparent sk-text-26-6667-66 sk-text sk-image sk-text-26-6667-502 sk-text-26-6667-498">选择日期</view>
+            </view>
+            <view class="date-type sk-transparent sk-text-26-6667-533 sk-text sk-image sk-text-26-6667-600" style="background-position-x: 50%;">按年查询</view>
+          </view>
+          <view>
+            <view class="type-nav">
+              <view class="type-nav-item">
+                <view class="type-nav-title">
+                  <view class="sk-transparent sk-text-14-2857-478 sk-text sk-image sk-text-14-2857-780" style="background-position-x: 50%;">月收入</view>
+                  <view class="sk-transparent sk-text-14-2857-261 sk-text sk-image sk-text-14-2857-763" style="background-position-x: 50%;">3000.89</view>
+                </view>
+              </view>
+              <view class="type-nav-item">
+                <view class="type-nav-title">
+                  <view class="sk-transparent sk-text-14-2857-430 sk-text sk-image sk-text-14-2857-569" style="background-position-x: 50%;">支出</view>
+                  <view class="sk-transparent sk-text-14-2857-140 sk-text sk-image sk-text-14-2857-162" style="background-position-x: 50%;">3000.89</view>
+                </view>
+              </view>
+            </view>
+            <view class="pie-box">
+              <view id="mychart-dom-pie">
+                <view class="canvas--ec-canvas sk-transparent sk-text-14-2857-654 sk-text sk-image sk-text-14-2857-908 sk-text-14-2857-312">绘图区域</view>
+              </view>
+            </view>
+            <view class="type-data">
+              <view>
+                <view class="data--type-data">
+                  <view class="data--type-data-icon">
+                    <image class="data--auto-img sk-image" mode="widthFix"></image>
+                  </view>
+                  <view class="data--type-data-item">
+                    <view class="data--t1">
+                      <view class="data--t1-title sk-transparent sk-text-14-2857-510 sk-text sk-image sk-text-14-2857-414">学习</view>
+                      <view class="data--t1-money data--sr sk-transparent sk-text-14-2857-900 sk-text sk-image sk-text-14-2857-858">600</view>
+                    </view>
+                    <view class="data--b1">
+                      <view class="data--progress-box">
+                        <view class="data--progress-active"></view>
+                      </view>
+                      <view class="data--counts sk-transparent sk-text-14-2857-158 sk-text sk-image sk-text-14-2857-612">2笔</view>
+                    </view>
+                  </view>
+                  <view class="data--type-data-arrow">
+                    <image class="data--auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="chart">
+        <view class="chart-nav">
+          <view class="select-date">
+            <view class="sk-transparent sk-text-26-6667-998 sk-text sk-image sk-text-26-6667-390">选择日期</view>
+          </view>
+          <view class="date-type sk-transparent sk-text-26-6667-19 sk-text sk-image" style="background-position-x: 50%;">按年查询</view>
+        </view>
+        <view>
+          <view class="type-nav">
+            <view class="type-nav-item">
+              <view class="type-nav-title">
+                <view class="sk-transparent sk-text-14-2857-201 sk-text sk-image" style="background-position-x: 50%;">月收入</view>
+                <view class="sk-transparent sk-text-14-2857-953 sk-text sk-image" style="background-position-x: 50%;">3000.89</view>
+              </view>
+            </view>
+            <view class="type-nav-item">
+              <view class="type-nav-title">
+                <view class="sk-transparent sk-text-14-2857-215 sk-text sk-image" style="background-position-x: 50%;">支出</view>
+                <view class="sk-transparent sk-text-14-2857-41 sk-text sk-image" style="background-position-x: 50%;">3000.89</view>
+              </view>
+            </view>
+          </view>
+          <view class="pie-box"></view>
+          <view class="type-data">
+            <view>
+              <view class="data--type-data">
+                <view class="data--type-data-icon">
+                  <image class="data--auto-img sk-image" mode="widthFix"></image>
+                </view>
+                <view class="data--type-data-item">
+                  <view class="data--t1">
+                    <view class="data--t1-title sk-transparent sk-text-14-2857-500 sk-text sk-image">学习</view>
+                    <view class="data--t1-money data--sr sk-transparent sk-text-14-2857-249 sk-text sk-image">600</view>
+                  </view>
+                  <view class="data--b1">
+                    <view class="data--progress-box">
+                      <view class="data--progress-active"></view>
+                    </view>
+                    <view class="data--counts sk-transparent sk-text-14-2857-133 sk-text sk-image">2笔</view>
+                  </view>
+                </view>
+                <view class="data--type-data-arrow">
+                  <image class="data--auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="chart">
+      <view class="chart-nav">
+        <view class="select-date">
+          <view end="2021-03-05" mode="date" start="2000-01-01" class="sk-transparent sk-text-26-6667-532 sk-text sk-image">选择日期</view>
+        </view>
+        <view class="date-type sk-transparent sk-text-26-6667-975 sk-text" style="background-position-x: 50%;">按年查询</view>
+      </view>
+      <view>
+        <view class="type-nav">
+          <view class="type-nav-item">
+            <view class="type-nav-title">
+              <view class="sk-transparent sk-text-14-2857-2 sk-text" style="background-position-x: 50%;">月收入</view>
+              <view class="sk-transparent sk-text-14-2857-73 sk-text" style="background-position-x: 50%;">3000.89</view>
+            </view>
+          </view>
+          <view class="type-nav-item">
+            <view class="type-nav-title">
+              <view class="sk-transparent sk-text-14-2857-760 sk-text" style="background-position-x: 50%;">支出</view>
+              <view class="sk-transparent sk-text-14-2857-420 sk-text" style="background-position-x: 50%;">3000.89</view>
+            </view>
+          </view>
+        </view>
+        <view class="pie-box"></view>
+        <view class="type-data">
+          <view is="components/type-data/type-data">
+            <view class="data--type-data">
+              <view class="data--type-data-icon">
+                <image class="data--auto-img sk-image" mode="widthFix"></image>
+              </view>
+              <view class="data--type-data-item">
+                <view class="data--t1">
+                  <view class="data--t1-title sk-transparent sk-text-14-2857-263 sk-text">学习</view>
+                  <view class="data--t1-money data--sr sk-transparent sk-text-14-2857-389 sk-text">600</view>
+                </view>
+                <view class="data--b1">
+                  <view class="data--progress-box">
+                    <view class="data--progress-active"></view>
+                  </view>
+                  <view class="data--counts sk-transparent sk-text-14-2857-516 sk-text">2笔</view>
+                </view>
+              </view>
+              <view class="data--type-data-arrow">
+                <image class="data--auto-img sk-image" mode="widthFix" style="height: 20px;"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

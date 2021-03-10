@@ -1,0 +1,198 @@
+@import "./booking.skeleton.wxss";
+.booking .bk-title{
+  height: 120rpx;
+  background-color: #6e62e2;
+  padding-top: 20rpx;
+  box-sizing: border-box;
+}
+.booking .bk-title .content{
+  border: 1px solid white;
+  line-height: 80rpx;
+  width: 320rpx;
+  margin:0 auto;
+  
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+.booking .bk-title .content .ctype{
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  color: white;
+}
+.booking .bk-title .content .Highlight{
+  background-color: white;
+  color: #444444;
+}
+.booking .input{
+  padding:0 20rpx;
+  background-color: white;
+  margin-bottom: 10rpx;
+  
+}
+.booking .input .bk-input{
+  padding: 20rpx 0;
+  border-bottom: 2px solid #eeeeee;
+}
+.booking .input .bk-type{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  flex-wrap: wrap;
+}
+.booking .input .bk-type .types{
+  /* flex: 2; */
+  width: 20%;
+  margin-bottom:20rpx ;
+  
+}
+.booking .input .bk-type .types .img{
+  width: 100rpx;
+  height: 100rpx;
+  display: block;
+  margin: 0 auto;
+  padding: 10rpx 0;
+}
+.booking .input .bk-type .types .text{
+  width: 100%;
+  padding-top: 10rpx;
+  text-align: center;
+}
+.booking .input .bk-type .types .select{
+  transform: scale(1.1);
+}
+.booking .input .bk-type .types .selects{
+  font-weight: bold;
+  color: #ff3e8d;
+}
+.booking .input .bk-type .types .hidden{
+  display: none;
+}
+.banner{
+  height: 450rpx;
+}
+.z-h{
+  margin: 0 20rpx;
+  line-height: 40rpx;
+  padding-bottom: 10rpx;
+  border-bottom:4rpx solid #cccccc ;
+}
+.payment-type{
+  display: flex;
+  padding: 10rpx 20rpx;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 40rpx;
+  /* background-color: white; */
+}
+.payment-type .p{
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+  color: white;
+  background-color: #cccccc;
+}
+.payment-type .p:last-child{
+  margin-right: 0;
+}
+.payment-type .p0{
+  background-color: #D13B2E;
+}
+.payment-type .p1{
+  background-color: #00b26a;
+}
+.payment-type .p2{
+  background-color: #22a5f1;
+}
+.payment-type .p3{
+  background-color: #ffa120;
+}
+.payment-type .p4{
+  background-color: #6e62e2;
+}
+.date,.remarks{
+  line-height: 80rpx;
+  display: flex;
+  margin: 0 20rpx;
+  border-bottom: 4rpx solid #cccccc;
+  /* align-items: center; */
+}
+.date .lf,
+.remarks .lf
+{
+  width: 100rpx;
+}
+.date .rg,
+.remarks .rg
+{
+  flex: 1;
+  color: #7c7c7c;
+ }
+ .remarks .rg{
+   height: 200rpx;
+   padding-top: 26rpx;
+ }
+ .remarks .rem-input{
+   line-height: 80rpx;
+   
+ }
+ .btn{
+   margin: 40rpx 20rpx;
+   position: relative;
+ }
+ .btn .btns{
+   width: 100%;
+   background-color: #6e62e2;
+ }
+ .btnsq{
+  position: absolute;
+  width: 100% !important;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+ .btn .btns:active{
+   background-color: #1296db;
+ }
+ 
+ .rem-input{
+  width: 340rpx;
+ }
+ .booking-content-item{
+  display: flex;
+  margin: 0 20rpx;
+}
+
+.b-title{
+  height: 80rpx;
+  line-height: 80rpx;
+  width: 100rpx;
+}
+
+.c-content{
+  
+  width: calc(100% - 120rpx);
+  height: 80rpx;
+}
+
+.area{
+  color: #7c7c7c;
+}
+
+.textarea{
+  height: 160rpx;
+}
+
+.t{
+  width: 100%;
+  height: 100%;
+  color: #7c7c7c;
+}
+
+.textarea-c{
+  height: 115rpx;
+  padding-top: 25rpx;
+  padding-right: 20rpx;
+}

@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/chart/chart",
+   
+    "pages/booking/booking",
+    "pages/my/my",
+    "components/bill/bill",
+    "pages/mybill/mybill",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#6e62e2",
+    "navigationBarTitleText": "氢松记账",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color": "#CDCDCD",
+    "selectedColor": "#6e62e2",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_x.png"
+      },
+      {
+        "pagePath": "pages/booking/booking",
+        "text": "记账",
+        "iconPath": "images/booking.png",
+        "selectedIconPath": "images/booking_x.png"
+      },
+      {
+        "pagePath": "pages/chart/chart",
+        "text": "图表",
+        "iconPath": "images/chart.png",
+        "selectedIconPath": "images/chart_x.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/my_x.png"
+      }
+    ]
+  }
+}

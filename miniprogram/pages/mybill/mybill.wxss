@@ -1,0 +1,2 @@
+/* miniprogram/pages/mybill/mybill.wxss */
+@import "./mybill.skeleton.wxss";

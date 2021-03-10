@@ -1,0 +1,113 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/3/2 上午11:19:37
+使用方法：
+在 F:\粤嵌资料\代码合集\自写\记账小程序\miniprogram\pages\home\home.wxml 引入模板
+
+```
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 F:\粤嵌资料\代码合集\自写\记账小程序\miniprogram\pages\home\home.wxss 中引入样式
+```
+@import "./home.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="home">
+      <view class="home-bg">
+        <view class="home-balance sk-transparent sk-text-14-2857-834 sk-text" style="background-position-x: 50%;">本月结余(元)</view>
+        <view class="home-balances sk-transparent">9,999,999.
+          <text class="home-decimal sk-transparent sk-text-14-2857-31 sk-text" style="background-position-x: 50%;">99</text>
+        </view>
+        <view class="home-detailed">
+          <view class="home-left" style="border: none;">
+            <view class="top sk-transparent sk-text-14-2857-38 sk-text" style="background-position-x: 50%;">本月收入</view>
+            <view class="bottom sk-transparent">10000.
+              <text class="sk-transparent sk-text-14-2857-999 sk-text" style="background-position-x: 50%;">99</text>
+            </view>
+          </view>
+          <view class="home-right" style="border: none;">
+            <view class="top sk-transparent sk-text-14-2857-429 sk-text" style="background-position-x: 50%;">本月支出</view>
+            <view class="bottom sk-transparent">10000.
+              <text class="sk-transparent sk-text-14-2857-340 sk-text" style="background-position-x: 50%;">99</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="home-nav">
+        <view class="nav-lf">
+          <view class="sk-transparent sk-text-26-6667-32 sk-text">05月04日</view>
+          <view class="sk-transparent">收入:1,000.
+            <text class="sk-transparent sk-text-26-6667-994 sk-text">00</text>
+          </view>
+          <view class="sk-transparent">支出:1,000.
+            <text class="sk-transparent sk-text-26-6667-452 sk-text">00</text>
+          </view>
+        </view>
+        <view class="nav-rg">
+          <view end="2021-09-01" mode="date" start="2011-09-01" class="sk-image">
+            <view class="picker">
+              <view></view>
+              <view></view>
+              <view></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="home-bill">
+        <view is="components/bill/bill">
+          <view class="bill--bill">
+            <view class="bill--lf">
+              <image class="sk-image"></image>
+            </view>
+            <view class="bill--rg" style="border: none;">
+              <view class="bill--rg-lf">
+                <view class="bill--top">
+                  <text class="bill--c1 sk-transparent sk-text-25-0000-388 sk-text">餐饮</text>
+                  <text class="bill--c2 sk-transparent sk-text-31-6667-711 sk-text">支付宝</text>
+                  <text class="bill--c2 sk-transparent sk-text-31-6667-716 sk-text">2021-02-01</text>
+                </view>
+                <view class="bill--bottom sk-transparent sk-text-22-5000-351 sk-text">这是备注</view>
+              </view>
+              <view class="bill--rg-rg">
+                <view class="bill--price sk-transparent">
+                  ￥1,111.
+                  <text class="sk-transparent sk-text-14-2857-445 sk-text">00</text>
+                </view>
+                <view class="bill--delte"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view is="components/bill/bill">
+          <view class="bill--bill">
+            <view class="bill--lf">
+              <image class="sk-image"></image>
+            </view>
+            <view class="bill--rg" style="border: none;">
+              <view class="bill--rg-lf">
+                <view class="bill--top">
+                  <text class="bill--c1 sk-transparent sk-text-25-0000-386 sk-text">餐饮</text>
+                  <text class="bill--c2 sk-transparent sk-text-31-6667-795 sk-text">支付宝</text>
+                  <text class="bill--c2 sk-transparent sk-text-31-6667-143 sk-text">2021-02-01</text>
+                </view>
+                <view class="bill--bottom sk-transparent sk-text-22-5000-648 sk-text">这是备注</view>
+              </view>
+              <view class="bill--rg-rg">
+                <view class="bill--price sk-transparent">
+                  ￥1,111.
+                  <text class="sk-transparent sk-text-14-2857-395 sk-text">00</text>
+                </view>
+                <view class="bill--delte"></view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

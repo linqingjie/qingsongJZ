@@ -1,0 +1,110 @@
+@import "./home.skeleton.wxss";
+.home .home-bg{
+  background-color: #6e62e2;
+  height: 400rpx;
+  box-sizing: border-box;
+  padding-top: 20rpx;
+  overflow: hidden;
+}
+.home .home-bg .home-balance{
+  text-align: center;
+  width: 180rpx;
+  margin: 0 auto;
+  border-radius: 40rpx;
+  padding:10rpx 16rpx;
+  font-size: 28rpx;
+  background-color: rgba(255, 255, 255, .1);
+  font-weight: bold;
+}
+.home .home-bg .home-balances{
+  text-align: center;
+  font-size: 46rpx;
+  font-weight: bold;
+  margin-top:40rpx ;
+  color: white;
+}
+.home .home-bg .home-decimal{
+  font-size: 28rpx;
+}
+.home .home-bg .home-detailed{
+  margin-top: 50rpx;
+  height: 140rpx;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.home .home-bg .home-detailed .home-left,
+.home .home-bg .home-detailed .home-right
+{
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.home .home-bg .home-detailed .home-left{
+  border-right: 2rpx solid white;
+}
+.home .home-bg .home-detailed .home-right{
+  border-left: 2rpx solid white;
+}
+.home .home-bg .home-detailed .bottom{
+  font-weight: bold;
+  color: white;
+}
+.home .home-bg .home-detailed .top{
+  font-weight: bold;
+  width: 200rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 29rpx;
+  padding:10rpx 16rpx;
+}
+.home .home-bg .home-detailed .bottom text{
+  font-size: 24rpx;
+}
+.home .home-nav{
+  display: flex;
+  padding: 0 20rpx;
+  height: 60rpx;
+  justify-content: space-between;
+}
+.home .home-nav .nav-rg{
+  width: 60rpx;
+}
+.home .home-nav .nav-lf{
+  display: flex;
+  justify-content: left;
+}
+.home .home-nav .nav-lf view{
+  line-height: 60rpx;
+  font-size: 28rpx;
+  padding-right: 10rpx;
+  color: #888888;
+}
+.home .home-nav .nav-lf .sr{
+  color: #00b26a;
+}
+.home .home-nav .nav-lf .zc{
+  color: #D13B2E;
+}
+.home .home-nav .nav-rg .picker{
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .home-nav .nav-rg .picker view{
+  width: 14rpx;
+  height: 14rpx;
+  border-radius: 50%;
+  background-color: #cccccc;
+}
+.not-booking{
+  text-align: center;
+  margin-top: 100rpx;
+  font-size: 28rpx;
+  color: #999;
+}
